@@ -1,3 +1,10 @@
 {
-  "extends": ["airbnb/base"]
+  "extends": [
+    "airbnb/base",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "standard",
+    "standard-jsx",
+    "standard-react"
+  ]
 }

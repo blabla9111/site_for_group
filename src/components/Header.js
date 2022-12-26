@@ -2,12 +2,15 @@ import { useNavigate } from 'react-router-dom'
 
 function Header () {
   const navigate = useNavigate()
-  const click = () => {
+  const clickMain = () => {
+    navigate('/')
+  }
+  const clickUniver = () => {
     navigate('/univer')
   }
   return (
     <header className="d-flex justify-between align-center p-40">
-      <a href="/">
+      <a onClick={clickMain}>
         <div className="d-flex align-center">
           <img width={80} height={40} alt="" src="/img/logo.png" />
           <div>
@@ -17,7 +20,7 @@ function Header () {
         </div>
       </a>
       <div>
-        <a onClick={click}> О нашем Университете</a>
+        <a onClick={clickUniver}> О нашем Университете</a>
       </div>
     </header>
   )
